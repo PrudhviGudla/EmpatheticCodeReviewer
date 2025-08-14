@@ -22,19 +22,8 @@ EmpatheticCodeReviewer is a LangChain-based agent that transforms harsh code rev
 ```
 pip install langchain-groq langchain-community duckduckgo-search
 ```
-Run all the cells from start to end, and put your input as example_input in the end and pass it into the generate_empathetic_review method 
+Run all the cells from start to end, and put your input as example_input in the end, and pass it into the generate_empathetic_review method 
 
-Input Format
-json
-{
-    "code_snippet": "string - The code to be reviewed (use \\n for line breaks)",
-    "review_comments": [
-        "string - First review comment",
-        "string - Second review comment",
-        ...
-    ]
-}
-Output Format
 The tool generates structured feedback with:
 - Positive Rephrasing: Encouraging version of the original comment
 - The 'Why': Technical explanation with analogies
