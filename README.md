@@ -30,27 +30,7 @@ Token Management: Optimized search results to prevent token overflow
 ```
 pip install langchain-groq langchain-community duckduckgo-search
 ```
-```
-from empathic_code_reviewer import EmpathicCodeReviewer
-
-# Initialize the reviewer
-reviewer = EmpathicCodeReviewer()
-
-# Prepare input data
-example_input = {
-    "code_snippet": "function calculateTotal(items) {\n var sum = 0;\n for (var i = 0; i < items.length; i++) {\n sum += items[i].price * items[i].qty;\n }\n return sum;\n}",
-    "review_comments": [
-        "Use const/let instead of var. This is terrible practice.",
-        "Function name is too generic.",
-        "No input validation - this will crash with null items.",
-        "Consider using reduce() for functional programming style."
-    ]
-}
-
-# Generate empathetic review
-result = reviewer.generate_empathetic_review(example_input)
-print(result)
-```
+Run all the cells from start to end, and put your input as example_input in the end and pass it into the generate_empathetic_review method 
 
 Input Format
 json
