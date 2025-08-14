@@ -1,30 +1,22 @@
 # EmpatheticCodeReviewer
 
 ## Overview
-EmpathicCodeReviewer is a LangChain-based agent that transforms harsh code review comments into empathetic, constructive feedback. It utilizes AI to reframe criticism in a positive light while maintaining technical accuracy and providing educational explanations, accompanied by relevant documentation.
+EmpatheticCodeReviewer is a LangChain-based agent that transforms harsh code review comments into empathetic, constructive feedback. It utilizes AI to reframe criticism in a positive light while maintaining technical accuracy and providing educational explanations, accompanied by relevant documentation.
 
 ## Features
-Core Functionality
-Empathetic Transformation: Converts harsh review comments into supportive, encouraging feedback
-
-Severity Classification: Automatically categorizes comments as CRITICAL, MODERATE, or MINOR
-
-Technical Documentation: Uses web search to find relevant programming resources and best practices
-
-Tone Adaptation: Adjusts response tone based on comment severity
-
-Code Examples: Provides concrete code improvements with inline explanations
+- Core Functionality
+- Empathetic Transformation: Converts harsh review comments into supportive, encouraging feedback
+- Severity Classification: Automatically categorizes comments as CRITICAL, MODERATE, or MINOR
+- Technical Documentation: Uses web search to find relevant programming resources and best practices
+- Tone Adaptation: Adjusts response tone based on comment severity
+- Code Examples: Provides concrete code improvements with inline explanations
 
 ## Technical Features
-ReAct Agent Architecture: Uses reasoning and acting cycles for systematic processing
-
-Tool Integration: Incorporates DuckDuckGo search for documentation lookup
-
-Custom Agent Executor: Implements stopping conditions to prevent infinite loops
-
-Error Handling: Graceful fallback when search tools fail
-
-Token Management: Optimized search results to prevent token overflow
+- ReAct Agent Architecture: Uses reasoning and acting cycles for systematic processing
+- Tool Integration: Incorporates DuckDuckGo search for documentation lookup
+- Custom Agent Executor: Implements stopping conditions to prevent infinite loops
+- Error Handling: Graceful fallback when search tools fail
+- Token Management: Optimized search results to prevent token overflow
 
 ## Installation and Usage
 ```
@@ -44,11 +36,11 @@ json
 }
 Output Format
 The tool generates structured feedback with:
-Positive Rephrasing: Encouraging version of the original comment
-The 'Why': Technical explanation with analogies
-Suggested Improvement: Concrete code examples with comments
-Additional Resources: Relevant documentation links
-Overall Feedback Summary: Motivational conclusion
+- Positive Rephrasing: Encouraging version of the original comment
+- The 'Why': Technical explanation with analogies
+- Suggested Improvement: Concrete code examples with comments
+- Additional Resources: Relevant documentation links
+- Overall Feedback Summary: Motivational conclusion
 
 ## API Key Setup
 Replace the API key in the code cell:
