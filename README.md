@@ -10,5 +10,5 @@ Brief on how to run the Reviewer:
 
 Explanation of Working:
 1. Prompt Engineering: Few shot examples, Instructions as per requirements, Enforcing Format, Suggesting Tool usage to search for documentation links.
-2. ReAct Langchain agent that takes the input the severity analysis through the same llm done in previosly, the above engineered prompt, code snippet and review comments
-3. It gnerates the Reviwed and modified output as per the requirement of the problem statemnet
+2. ReAct Langchain agent that takes the input the severity analysis through the same llm done previosly, the above engineered prompt, code snippet and review comments
+3. It generates the Reviewed and modified output as per the requirement of the problem statement
